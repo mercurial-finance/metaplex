@@ -1,0 +1,10 @@
+#!/bin/bash
+
+counter=1
+while [ $counter -le 50 ]
+do
+  ./target/debug/spl-token-metadata-test-client --keypair ~/phantom_wallet.json mint_new_edition_from_master_edition_via_token --mint 7xPah9bPtBwEkFWvnBL3jLAGi7gSUpjjnar9oMmtjCu6 --url https://api.metaplex.solana.com/
+  ((counter++))
+done
+
+echo All done

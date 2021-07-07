@@ -140,3 +140,18 @@ Go to phantom wallet, settings, Export private key (it is base58 :s)
 2. https://www.dcode.fr/base-58-cipher convert to decimal, then insert comma (use python ",".join("107 226 38 36 208 86 37 .. ".split(' ')) )
 3. create keypair file .json with [121, 1, 123, ..., 154]
 4. verify pubkey matches with solana-keygen pubkey <KEYPAIR_FILE>
+
+
+
+## Mint Copy of Day 1 Pioneer NFT
+./target/debug/spl-token-metadata-test-client --keypair ~/phantom_wallet.json mint_new_edition_from_master_edition_via_token --mint 7xPah9bPtBwEkFWvnBL3jLAGi7gSUpjjnar9oMmtjCu6 --url https://api.metaplex.solana.com/
+
+## Mint Copy of Day 1 Team NFT
+./target/debug/spl-token-metadata-test-client --keypair ~/phantom_wallet.json mint_new_edition_from_master_edition_via_token --mint 7Vg4S1yuFPziZaBcpNyB8LDmKiUBW11WSxfYcU1jwF4Z --url https://api.metaplex.solana.com/
+
+## Mint Copy of Day 1 Standard NFT
+./target/debug/spl-token-metadata-test-client --keypair ~/phantom_wallet.json mint_new_edition_from_master_edition_via_token --mint 6hakUtw98W5S7tpEfNMNBVmU8uup8cu2z5CxB46592An --url https://api.metaplex.solana.com/
+
+
+## show metadata
+./target/debug/spl-token-metadata-test-client show --keypair ~/phantom_wallet.json  --mint 7xPah9bPtBwEkFWvnBL3jLAGi7gSUpjjnar9oMmtjCu6 --url https://api.metaplex.solana.com/
