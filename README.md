@@ -153,7 +153,11 @@ Go to phantom wallet, settings, Export private key (it is base58 :s)
 ./target/debug/spl-token-metadata-test-client --keypair ~/phantom_wallet.json mint_new_edition_from_master_edition_via_token --mint 6hakUtw98W5S7tpEfNMNBVmU8uup8cu2z5CxB46592An --url https://api.metaplex.solana.com/
 
 ## Mint Copy of Mercurial x Terra
-./target/debug/spl-token-metadata-test-client --keypair ~/phantom_wallet.json mint_new_edition_from_master_edition_via_token --mint 69WEs17cYzP7S49rBBvWsdrLNerNSBQmJLBWgyXGfnL6 --url https://api.metaplex.solana.com/
+./target/debug/spl-token-metadata-test-client --keypair ~/phantom_wallet.json mint_new_edition_from_master_edition_via_token --mint 4pNnsWJJRRWbbL1Sur42dfKi8WrXPvfgSbUWRKBrHm5W --url https://api.metaplex.solana.com/
+
+## Mint Copy of Mercurial x Parrot
+./target/debug/spl-token-metadata-test-client --keypair ~/phantom_wallet.json mint_new_edition_from_master_edition_via_token --mint 4kMJVcVuoxNPZaiQbxno46ebtvW81rFSXKy2BfpHWV3h --url https://api.metaplex.solana.com/
+
 
 
 ## show metadata
