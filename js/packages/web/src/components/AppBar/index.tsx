@@ -22,17 +22,6 @@ const UserActions = () => {
 
   return (
     <>
-<<<<<<< HEAD
-      {/* <Link to={`#`}>
-        <Button className="app-btn">Bids</Button>
-      </Link> */}
-      {canCreate ? (<Link to={`/art/create`}>
-        <Button className="app-btn">Create</Button>
-      </Link>) : null}
-      <Link to={`/auction/create/0`}>
-        <Button className="connector" type="primary" >Sell</Button>
-      </Link>
-=======
       {store && (
         <>
           {/* <Link to={`#`}>
@@ -50,7 +39,6 @@ const UserActions = () => {
           </Link>
         </>
       )}
->>>>>>> fdcdd844f9cc6ad59591ebed45c4f53040f0f580
     </>
   );
 };

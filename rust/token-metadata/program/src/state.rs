@@ -355,27 +355,6 @@ impl ReservationList for ReservationListV2 {
             })
         }
         if self.reservations.len() > usize_offset {
-<<<<<<< HEAD
-            let reservation_length = reservations.len();
-
-            let removed_elements: Vec<Reservation> = self
-                .reservations
-                .splice(
-                    usize_offset..usize_offset + reservations.len(),
-                    reservations,
-                )
-                .collect();
-            let existing_res = removed_elements
-                .iter()
-                .find(|r| r.address != solana_program::system_program::id());
-            if let Some(replaced) = existing_res {
-                // If you overwrite yourself and only yourself, allow it.
-                let allowable_edgecase = reservation_length == 1
-                    && self.reservations[usize_offset].address == replaced.address;
-                if !allowable_edgecase {
-                    return Err(MetadataError::TriedToReplaceAnExistingReservation.into());
-                }
-=======
             let replaced_addr = self.reservations[usize_offset].address;
             let replaced_spots = self.reservations[usize_offset].total_spots;
 
@@ -389,7 +368,6 @@ impl ReservationList for ReservationListV2 {
                 );
             } else if replaced_addr != solana_program::system_program::id() {
                 return Err(MetadataError::TriedToReplaceAnExistingReservation.into());
->>>>>>> fdcdd844f9cc6ad59591ebed45c4f53040f0f580
             }
             self.reservations[usize_offset] = reservation;
         } else {
