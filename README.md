@@ -16,7 +16,7 @@ Metaplex is comprised of two core components: an on-chain program, and a self-ho
 
 If you want to deep dive on the Architecture, you can do so here:
 
-https://docs.metaplex.com/
+https://www.notion.so/Metaplex-Developer-Guide-afefbc19841744c28587ab948a08cfac
 
 ## Installing
 
@@ -163,4 +163,4 @@ Go to phantom wallet, settings, Export private key (it is base58 :s)
 
 
 ## show metadata
-./target/debug/spl-token-metadata-test-client show --keypair ~/phantom_wallet.json  --mint 7xPah9bPtBwEkFWvnBL3jLAGi7gSUpjjnar9oMmtjCu6 --url https://api.metaplex.solana.com/
+./target/debug/spl-token-metadata-test-client show --keypair ~/phantom_wallet.json  --mint AHtzwxL5jHyCKmnq3X6SyETHEy12gLW1mfT5FwucQRfC --url https://api.metaplex.solana.com/
