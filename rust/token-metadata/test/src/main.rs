@@ -141,6 +141,7 @@ fn mint_coins(app_matches: &ArgMatches, payer: Keypair, client: RpcClient) {
     let recent_blockhash = client.get_recent_blockhash().unwrap().0;
 
     transaction.sign(&signers, recent_blockhash);
+
     client.send_and_confirm_transaction(&transaction).unwrap();
 
     println!("Minted {:?} tokens to {:?}.", amount, destination_key);
