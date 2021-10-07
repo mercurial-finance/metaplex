@@ -164,7 +164,7 @@ Go to phantom wallet, settings, Export private key (it is base58 :s)
 ./target/debug/spl-token-metadata-test-client --keypair ~/phantom_wallet.json mint_new_edition_from_master_edition_via_token --mint AHtzwxL5jHyCKmnq3X6SyETHEy12gLW1mfT5FwucQRfC --url https://api.metaplex.solana.com/
 
 ## Mint Copy of Dead Eye Degen
-./target/debug/spl-token-metadata-test-client --keypair ~/phantom_wallet.json mint_new_edition_from_master_edition_via_token --mint CMqFN86io8zra3J5zawfzEP3unyHAnyJAg55zZ2tgnXT --url https://api.metaplex.solana.com/
+./target/debug/spl-token-metadata-test-client --keypair ~/phantom_wallet.json mint_new_edition_from_master_edition_via_token --mint 2LQS4NDJdUPfPFAbXz9Ejgo1CFUN2R43jQhfhKKHbmxR --url https://api.metaplex.solana.com/
 
 
 ## show metadata
